@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> Trong Media - Bản sao tĩnh</title>
+  <meta name="description" content="Bản sao tĩnh chuyển từ website gốc. Thay nội dung & ảnh theo hướng dẫn." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; background:#f7f7f7; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 24px auto; padding: 16px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; background:#0b69ff; color:#fff; padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(11,105,255,0.14); }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .brand img { width:56px; height:56px; object-fit:cover; border-radius:8px; background:#fff; }
+    .brand h1 { font-size:20px; letter-spacing:0.2px; }
+    nav a { margin-left:12px; color:#fff; font-weight:600; }
+    .cta { background:#fff; color:#0b69ff; padding:8px 14px; border-radius:8px; font-weight:700; }
+    .hero { display:flex; gap:20px; margin:18px 0; align-items:center; }
+    .hero .left { flex:1; }
+    .hero h2 { font-size:28px; margin-bottom:8px; }
+    .hero p { color:#444; margin-bottom:12px; line-height:1.5; }
+    .hero .btn-row { display:flex; gap:10px; flex-wrap:wrap; }
+    .btn { background:#0b69ff; color:#fff; padding:10px 14px; border-radius:10px; font-weight:700; display:inline-block; }
+    .hero .right { width:320px; max-width:40%; }
+    .hero img { width:100%; border-radius:10px; display:block; box-shadow:0 8px 26px rgba(11,105,255,0.12); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:20px 0; }
+    .card { background:#fff; padding:14px; border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+    .card h3 { margin-bottom:8px; font-size:16px; }
+    .card p { color:#666; font-size:14px; line-height:1.45; }
+    .contact { background:linear-gradient(90deg,#ffe6a7,#fff); padding:16px; border-radius:12px; margin:18px 0; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+    .contact .left { font-weight:700; }
+    .contact .right a { background:#0b69ff; color:#fff; padding:10px 12px; border-radius:10px; display:inline-block; }
+    footer { text-align:center; padding:20px 8px; color:#666; font-size:14px; margin-top:10px; }
+    @media (max-width:800px) {
+      .hero { flex-direction:column-reverse; }
+      .hero .right { width:100%; max-width:100%; }
+      header { flex-direction:column; text-align:center; gap:10px; }
+      nav { margin-top:8px; }
+      .contact { flex-direction:column; align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="https://via.placeholder.com/160x160.png?text=Logo" alt="Logo">
+        <div>
+          <h1>Duy Trong Media</h1>
+          <div style="font-size:13px; opacity:0.9">Dịch vụ mạng xã hội & quảng cáo</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Dịch vụ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#contact" class="cta">Liên hệ</a>
+      </nav>
+    </header>
+    <section class="hero" aria-label="Giới thiệu">
+      <div class="left">
+        <h2>Chuyên cung cấp dịch vụ quảng cáo & tăng tương tác</h2>
+        <p>Nhận chạy quảng cáo Facebook, TikTok; tăng like, tym, follow; thiết kế landing page và tối ưu chiến dịch. Liên hệ để được tư vấn gói phù hợp.</p>
+        <div class="btn-row">
+          <a class="btn" href="#contact">Liên hệ ngay</a>
+          <a class="btn" href="#services" style="background:#e8eaf6;color:#111">Xem dịch vụ</a>
+        </div>
+      </div>
+      <div class="right">
+        <img src="https://via.placeholder.com/480x300.png?text=Hero+Image" alt="Hero image">
+      </div>
+    </section>
+    <section id="services">
+      <h2 style="margin-bottom:10px;">Dịch vụ chính</h2>
+      <div class="grid">
+        <article class="card"><h3>Chạy quảng cáo Facebook / TikTok</h3><p>Thiết lập & tối ưu chiến dịch, target, đo lường hiệu quả, báo cáo hàng tuần.</p></article>
+        <article class="card"><h3>Tăng tương tác (Like / Follow / Share)</h3><p>Gói tương tác đảm bảo, kết hợp nội dung sáng tạo để tăng reach tự nhiên.</p></article>
+        <article class="card"><h3>Thiết kế Landing Page</h3><p>Landing page chuyển đổi cao, responsive, tích hợp form & thanh toán (nếu cần).</p></article>
+        <article class="card"><h3>Hỗ trợ quản trị & mở khóa tài khoản</h3><p>Dịch vụ hỗ trợ bảo mật, mở khóa, phục hồi tài khoản.</p></article>
+      </div>
+    </section>
+    <section id="about">
+      <div class="card"><h3>Về chúng tôi</h3><p>Đây là bản sao tĩnh. Thay phần này bằng lịch sử, mô tả, uy tín, testimonial, địa chỉ, hoặc danh sách khách hàng thực tế.</p></div>
+    </section>
+    <section id="contact" style="margin-top:18px;">
+      <div class="contact">
+        <div class="left">
+          <div>Muốn bắt đầu? Nhắn/Zalo hoặc gọi ngay:</div>
+          <div style="font-size:18px; margin-top:6px; font-weight:800;">Zalo / Phone: <span id="phone">0388.746.212</span></div>
+        </div>
+        <div class="right">
+          <a href="tel:+84388746212" id="callBtn">Gọi ngay</a>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px;">
+        <h3>Form liên hệ nhanh</h3>
+        <form id="leadForm" onsubmit="return submitForm(event)" style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
+          <input name="name" placeholder="Họ & tên" required style="padding:10px; border-radius:8px; border:1px solid #ddd" />
+          <input name="phone" placeholder="Số điện thoại / Zalo" required style="padding:10px; border-radius:8px; border:1px solid #ddd" />
+          <textarea name="note" placeholder="Nhu cầu (ngắn)" rows="3" style="padding:10px; border-radius:8px; border:1px solid #ddd"></textarea>
+          <button style="padding:10px 12px; border-radius:10px; background:#0b69ff; color:#fff; font-weight:700; border:0; width:160px;">Gửi</button>
+        </form>
+        <div id="formMsg" style="margin-top:10px;color:#0b6900; display:none;">Cám ơn! Chúng tôi sẽ liên hệ lại sớm.</div>
+      </div>
+    </section>
+    <footer>© <span id="year"></span> Duy Trong Media — Bản sao tĩnh.</footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function submitForm(e){
+      e.preventDefault();
+      const msg = document.getElementById('formMsg');
+      msg.style.display = 'block';
+      setTimeout(()=> msg.style.display = 'none', 4000);
+      e.target.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
